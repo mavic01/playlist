@@ -34,12 +34,12 @@ a {
     font-size: 20px;
     text-decoration: none;
     color:#fff;
-    background-color: #121313; 
+    background-color: #230652;
     border-radius: 10px;
     padding: .3em;
-    box-shadow: 0 20px 20px 0 rgba(5, 82, 55, 0.6);
+    box-shadow: 0 20px 20px 0 rgba(4, 119, 39, 0.6);
 }
-
+    
 
 
 .music-container {

@@ -58,7 +58,7 @@ function prevSong(){
 function nextSong(){
     songIndex++
     if(songIndex > 209){
-        songIndex = songs.length - 210 //aka the first song in the index
+        songIndex = songs.length - 2 //aka the first song in the index
     }
     loadSong(songs[songIndex])
 
