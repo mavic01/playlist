@@ -12,7 +12,7 @@ body {
     background-image: linear-gradient(
         0deg,
      rgb(247, 247, 247) 23.8%,
-     rgb(57, 166, 163)92% 
+     rgb(84, 67, 107)92% 
      );
      
     display: flex;
@@ -22,12 +22,12 @@ body {
 }
 
 h1 {
-    color: rgb(124, 131, 253);
+    color: rgb(102, 109, 245);
     animation: fadecolor 1s infinite;
   }
   @keyframes fadecolor {
-    from {color: rgb(124, 131, 253) } 
-    to {color: rgb(120, 122, 145)}
+    from {color: rgb(102, 109, 245) } 
+    to {color: rgb(149, 151, 184)}
   }
 
 a {
