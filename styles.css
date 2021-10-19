@@ -21,6 +21,14 @@ body {
     justify-content: center;
 }
 
+body.dark{
+    background-image: linear-gradient(
+        0deg,
+     rgb(247, 247, 247) 23.8%,
+     rgb(33, 33, 33) 92%
+     );
+}
+
 h1 {
     color: rgb(102, 109, 245);
     animation: fadecolor 1s infinite;
@@ -63,6 +71,10 @@ button {
     z-index: 10;
 }
 
+.play-img {
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
 
 .img-container {
     position: relative;
@@ -231,6 +243,53 @@ button {
 .bubbles img:nth-child(8){
     animation-delay: 8s;
     width: 40px;
+}
+.theme{
+    margin-bottom: 30px;
+}
+
+.label{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    width: 50px;
+    border-radius: 50px;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+    transition: all 0.2s linear;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(28px);
 }
 
 
