@@ -12,7 +12,7 @@ body {
     background-image: linear-gradient(
         0deg,
      rgb(247, 247, 247) 23.8%,
-     rgb(156, 192, 148)92% 
+     rgb(155, 25, 25)92% 
      );
      
     display: flex;
@@ -34,8 +34,8 @@ h1 {
     animation: fadecolor 1s infinite;
   }
   @keyframes fadecolor {
-    from {color: rgb(102, 109, 245) } 
-    to {color:  rgb(206, 124, 253)}
+    from {color: rgb(110, 116, 231) } 
+    to {color:  rgb(226, 225, 226)}
   }
 
 a {
@@ -74,6 +74,7 @@ button {
 .play-img {
     margin-bottom: 15px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .img-container {

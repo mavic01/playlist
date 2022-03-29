@@ -90,7 +90,8 @@ function setProgress(e){
 }
 
 function loadImage(){
-    playImg.setAttribute('src', 'images/home.jpg')
+    playImg.setAttribute('src', 'images/homee.png')
+    // playImg.setAttribute('src', 'images/home.jpg')
     playImg.classList.add('img-container')
     playImg.classList.add('play')
 }
