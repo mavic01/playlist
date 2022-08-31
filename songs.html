@@ -148,6 +148,34 @@
                     width: 40px;
                 }
 
+                .liClass {
+                    display: flex;
+                    background-color: gray;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 10px;
+                }
+                .aClass {
+                    background-color: rgb(106, 112, 229);
+                    padding: 5px;
+                    text-decoration: none;
+                    border: 1px solid rgb(45, 45, 45);
+                    border-radius: 10px;
+                    font-size: 15px;
+                    color: white;
+                }
+                .aClass:hover {
+                    background-color: antiquewhite;
+                    color: rgb(106, 112, 229);
+                }
+                @media  screen and (max-width: 480px) {
+                    .liClass {
+                        font-size: 10px;
+                    }
+                }
+
             </style>
 
 </head>
@@ -179,9 +207,18 @@
     const ul = document.createElement('ul')
     ul.setAttribute('id', 'theList')
     for (i = 0; i < songs.length; i++){
+        const anchor = document.createElement('a')
+        anchor.href = `music/${songs[i]}.mp3`
+        anchor.setAttribute("download", "")
+        anchor.classList.add("aClass")
+        anchor.innerText = "Download"
+
         const li = document.createElement('li')
         li.setAttribute('id', 'itemsss')
         li.innerHTML = songs[i]
+        li.classList.add("liClass")
+
+        li.appendChild(anchor)
         ul.appendChild(li)
     }
     cont.appendChild(ul)
